@@ -12,6 +12,10 @@ body {
     background-color: #1b1d20 !important;
     font-family: 'Inter' !important;
 }
+.link {
+    color:#9200E8 !important;
+    text-decoration: none;
+}
 .navbar .nav-link {
     color: white !important;
 }
@@ -29,6 +33,11 @@ footer {
     font-weight: 600 !important;
     background-color: #9200E8 !important;
     color: white !important;
+    transition: all 0.2s ease-in-out !important;
+}
+.btn-hero:hover {
+    background-color: #57288d !important;
+    transform: translateY(-5px);
 }
 .card-habilidade {
     perspective: 1000px;
