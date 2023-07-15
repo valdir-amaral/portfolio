@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+
+:root {
+    --dark-1: #0e1013;
+    --dark-3: #282a2d;
+}
+.bg-dark-1 {
+    background-color: var(--dark-1);
+}
+body {
+    color: white !important;
+    background-color: #1b1d20 !important;
+    font-family: 'Inter' !important;
+    padding-bottom: 300px;
+}
+.navbar .nav-link {
+    color: white !important;
+}
+
+.main-hero {
+    padding: 130px 0;
+}
+.btn-hero {
+    background-color: #a074f3 !important;
+    color: white !important;
+}
+.card-habilidade {
+    perspective: 1000px;
+    position: relative;
+    height: 440px;
+    max-width: 300px;
+    cursor: pointer;
+    background-color: #0e1013;
+    border-radius: 4px;
+    border: 1px solid black;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
+    padding: 1rem;
+    transition: .3s;
+    text-align: center;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.card-habilidade:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+.card-habilidade .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.card-habilidade .card-back {
+    transform: rotateY(180deg);
+}
+.card-back p {
+    font-weight: 400;
+    word-wrap:break-word;
+}
+.card-habilidade .content, .card-habilidade .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.card-habilidade:before {
+    height: 190px;
+    width: calc(100%);
+    content: "";
+    position: absolute;
+    background: #a074f3;
+    border-radius: 4px 4px 100% 100%;
+    transition: all .4s ease-out;
+    top: 0;
+}
+
+.card-habilidade:hover:before {
+    height: 100%;
+    border-radius: 0;
+}
+.card-habilidade .content {
+    z-index: 1;
+    font-size: 18px;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-habilidade p {
+    transition: all .4s ease-in-out;
+}
+.card-habilidade:hover {
+    font-weight: 700;
+    transform: translateY(-15px);
+}
+.content img {
+    border-radius: 50%;
+    
+}
+
+
+
+.swiper-slide {
+    text-align: center;
+}
+
+
+.bottom-card {
+    color: white;
+    padding: 40px 50px;
+    transition: all .5s;
+    background: #0e1013;
+}
+
+.card-image {
+    height: 200px;
+    width: 100%;
+    transition: all 0.5s;
+    background-position-x: center;
+    background-position-y: -100px;
+    
+}
+
+.mobile .card-image{
+    background-image: url('../img/rw.png');
+}
+.website-1 .card-image {
+    background-image: url('../img/tmx.png');
+    background-position-y: center;
+}
+.customer-portal .card-image {
+    background-image: url('../img/apt.png');
+}
+.website-2 .card-image {
+    background-image: url('../img/ext.png');
+    background-position-y: center;
+}
+
+.top-yellow {
+    border-top: 3px solid #f5d871;
+}
+.top-red {
+    border-top: 3px solid #ff6d3a;
+}
+.top-green {
+    border-top: 3px solid #052A2F;
+}
+.top-purple {
+    border-top: 3px solid #4f379f;
+}
+.card-project:hover.mobile .bottom-card {
+    background-color: #ff6d3a;
+}
+.card-project:hover.website-1 .bottom-card {
+    background-color: #052A2F;
+}
+.card-project:hover.website-2 .bottom-card {
+    background-color: #f5d871;
+}
+.card-project:hover.customer-portal .bottom-card {
+    background: #4f379f;
+}
+.swiper-pagination-bullet-active {
+    background-color: #a074f3;
+}
+a.swiper-slide {
+    text-decoration: none;
+    overflow: hidden;
+}
+a.swiper-slide:hover .card-image {
+    filter: brightness(0.4);
+}
+.swiper-pagination {
+    bottom: -56px;
+}
+.swiper-button-prev {
+    left: -60px;
+}
+.swiper-button-next {
+    right: -60px;
+}
+.swiper-button-prev, .swiper-button-next {
+    color: #a074f3;
+}
+
+
+.form-control {
+    padding: 17px !important;
+}
+.form-control:focus {
+    border-color: #7630af !important;
+    box-shadow: 0 0 0 .25rem rgba(145, 13, 253, 0.116) !important;
+}
+.contato-body {
+    position: relative;
+    top: -50px;
+}
+
+.cta, #projetos {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.cta .container {
+    gap: 20px;
+}
+.pulse-btn {
+    border-radius: 8px;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 1.1em;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    padding: 20px 30px;
+    color: #fff;
+    background-color: #a074f3;
+    -webkit-animation: pulse 1s ease infinite;
+    -moz-animation: pulse 1s ease infinite;
+    -ms-animation: pulse 1s ease infinite;
+    -o-animation: pulse 1s ease infinite;
+    animation: pulse 1s ease infinite;
+    transition: all 0.4s;
+    margin: auto;
+  }
+  .pulse-btn:hover {
+    color: #fff;
+  }
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale(1);
+    }
+    25% {
+      -webkit-transform: scale(1.1);
+    }
+    50% {
+      -webkit-transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+    }
+  }
+  @-moz-keyframes pulse {
+    0% {
+      -moz-transform: scale(1);
+    }
+    25% {
+      -moz-transform: scale(1.1);
+    }
+    50% {
+      -moz-transform: scale(1);
+    }
+    100% {
+      -moz-transform: scale(1);
+    }
+  }
+  @-ms-keyframes pulse {
+    0% {
+      -ms-transform: scale(1);
+    }
+    25% {
+      -ms-transform: scale(1.1);
+    }
+    50% {
+      -ms-transform: scale(1);
+    }
+    100% {
+      -ms-transform: scale(1);
+    }
+  }
+  @-o-keyframes pulse {
+    
+    0% { -o-transform: scale(1); }
+    25% { -o-transform: scale(1.1); }
+    50% { -o-transform: scale(1); }
+    100% { -o-transform: scale(1); } 
+  }
+  @keyframes pulse { 
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  }
