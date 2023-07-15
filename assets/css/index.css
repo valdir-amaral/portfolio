@@ -175,7 +175,7 @@ footer {
     background: #4f379f;
 }
 .swiper-pagination-bullet-active {
-    background-color: #a074f3;
+    background-color: #a074f3 !important;
 }
 a.swiper-slide {
     text-decoration: none;
