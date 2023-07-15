@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato | Valdir Amaral</title>
-
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
     <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
@@ -17,7 +20,7 @@
     
     <nav class="navbar py-3 navbar-expand-lg bg-black">
         <div class="container">
-          <a class="text-white navbar-brand" href="#">Navbar</a>
+          <a class="text-white navbar-brand" href="#"><img src="./assets/img/cafe-icon.png"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -51,7 +54,7 @@
       </section>
 
 
-      <section class="contato-body">
+      <section class="pushup">
         <div class="container">
             <form onsubmit="handleSubmit(event)" action="https://api.staticforms.xyz/submit" method="post">
                 <input class="mb-3 form-control" type="text" name="name" placeholder="Seu nome" required>
@@ -61,19 +64,20 @@
                 <input type="hidden" name="accessKey" value="4fbbb3a1-c5dc-4416-80e0-79f2bc1a7751">
                 <input type="hidden" name="subject" value="Mensagem de contato" />
                 <input type="hidden" name="replyTo" value="@">
-                <input type="hidden" name="redirectTo" value="./obrigado">
-                <input class="btn btn-hero" type="submit" value="Submit" />
+                <input type="hidden" name="redirectTo" value="https://valdir-amaral.github.io/portfolio/obrigado">
+                <input class="btn btn-hero" type="submit" value="Enviar" />
             </form>
 
-            <div class="py-5">
-                <h2 class="text-center">Ou se você preferir...</h2>
-                <div>
-                    <a href="">Linkedin</a>
-                    <a href=""></a>
-                </div>
-            </div>
         </div>
       </section>
+
+      <footer class="position-relative text-center text-lg-start" style="bottom: -48px;">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright: Valdir Amaral
+        </div>
+        <!-- Copyright -->
+      </footer>
 
       <script>
         function handleSubmit(ev) {

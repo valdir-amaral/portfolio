@@ -11,17 +11,23 @@ body {
     color: white !important;
     background-color: #1b1d20 !important;
     font-family: 'Inter' !important;
-    padding-bottom: 300px;
 }
 .navbar .nav-link {
     color: white !important;
 }
-
+.navbar-brand img {
+    max-width: 50px;
+}
 .main-hero {
     padding: 130px 0;
 }
+footer {
+    margin-top: 70px;
+    background-color: var(--dark-1);
+}
 .btn-hero {
-    background-color: #a074f3 !important;
+    font-weight: 600 !important;
+    background-color: #9200E8 !important;
     color: white !important;
 }
 .card-habilidade {
@@ -109,12 +115,9 @@ body {
     
 }
 
-
-
 .swiper-slide {
     text-align: center;
 }
-
 
 .bottom-card {
     color: white;
@@ -193,8 +196,13 @@ a.swiper-slide:hover .card-image {
 .swiper-button-prev, .swiper-button-next {
     color: #a074f3;
 }
-
-
+.navbar-toggler-icon {
+    background-image: url('../img/hamburger.png') !important;
+}
+form {
+    max-width: 900px;
+    margin: auto;
+}
 .form-control {
     padding: 17px !important;
 }
@@ -202,12 +210,15 @@ a.swiper-slide:hover .card-image {
     border-color: #7630af !important;
     box-shadow: 0 0 0 .25rem rgba(145, 13, 253, 0.116) !important;
 }
-.contato-body {
+.pushup {
     position: relative;
     top: -50px;
 }
-
-.cta, #projetos {
+.hero-title {
+    max-width: 535px;
+    line-height: 150%;
+}
+.cta, .sobre, #projetos {
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -236,50 +247,30 @@ a.swiper-slide:hover .card-image {
   .pulse-btn:hover {
     color: #fff;
   }
+
+  .text-corpo {
+    font-family: Helvetica;
+  }
+
   @-webkit-keyframes pulse {
-    0% {
-      -webkit-transform: scale(1);
-    }
-    25% {
-      -webkit-transform: scale(1.1);
-    }
-    50% {
-      -webkit-transform: scale(1);
-    }
-    100% {
-      -webkit-transform: scale(1);
-    }
+    0% {-webkit-transform: scale(1);}
+    25% {-webkit-transform: scale(1.1);}
+    50% {-webkit-transform: scale(1);}
+    100% {-webkit-transform: scale(1);}
   }
   @-moz-keyframes pulse {
-    0% {
-      -moz-transform: scale(1);
-    }
-    25% {
-      -moz-transform: scale(1.1);
-    }
-    50% {
-      -moz-transform: scale(1);
-    }
-    100% {
-      -moz-transform: scale(1);
-    }
+    0% {-moz-transform: scale(1);}
+    25% {-moz-transform: scale(1.1);}
+    50% {-moz-transform: scale(1);}
+    100% {-moz-transform: scale(1);}
   }
   @-ms-keyframes pulse {
-    0% {
-      -ms-transform: scale(1);
-    }
-    25% {
-      -ms-transform: scale(1.1);
-    }
-    50% {
-      -ms-transform: scale(1);
-    }
-    100% {
-      -ms-transform: scale(1);
-    }
+    0% {-ms-transform: scale(1);}
+    25% {-ms-transform: scale(1.1);}
+    50% {-ms-transform: scale(1);}
+    100% {-ms-transform: scale(1)}
   }
   @-o-keyframes pulse {
-    
     0% { -o-transform: scale(1); }
     25% { -o-transform: scale(1.1); }
     50% { -o-transform: scale(1); }
@@ -289,4 +280,16 @@ a.swiper-slide:hover .card-image {
     0% {transform: scale(1);}
     50% {transform: scale(1.1);}
     100% {transform: scale(1);}
+  }
+
+
+  @media screen and (max-width: 767px) {
+    .cards-flex {
+        display: none;
+    }
+  }
+  @media screen and (min-width: 767px) {
+    .cards-swiper {
+        display: none !important;
+    }
   }
