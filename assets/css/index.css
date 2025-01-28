@@ -360,6 +360,9 @@ form {
     .cards-flex {
         display: none;
     }
+    .main-hero, .sobre, .projetos {
+        padding: 50px 0;
+    }
   }
   @media screen and (min-width: 767px) {
     .cards-swiper {
@@ -391,7 +394,7 @@ form {
     }
     to {
         opacity: 1;
-        transform: translate(-40px, -145px);
+        transform: translate(-25px, -135px);
        
     }
 }  
