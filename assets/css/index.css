@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&family=Lexend:wght@100..900&family=Shadows+Into+Light+Two&display=swap');
 :root {
     --dark-1: #0e1013;
     --dark-3: #282a2d;
@@ -11,7 +11,30 @@
 body {
     color: white !important;
     background-color: #1b1d20 !important;
-    font-family: 'Inter' !important;
+    font-family: 'Lexend' !important;
+}
+.main-hero h1 {
+    font-size: 16px;
+}
+
+.main-hero .social-buttons {
+    display: flex;
+    gap: 8px;
+}
+.social-buttons > * {
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    transition: all 0.2s ease-in-out !important;
+}
+.btn-linkedin {
+    background-color: #0A66C2;
+}
+.btn-github {
+    background-color: white;
+}
+.btn-github, .btn-linkedin {
+    padding: 8px;
 }
 .link {
     color:#9200E8 !important;
@@ -31,6 +54,9 @@ img {
 }
 .main-hero {
     padding: 130px 0;
+}
+.main-hero p {
+    margin-bottom: 26px;
 }
 .typing-demo {
     max-width: fit-content;
@@ -93,11 +119,10 @@ footer {
     font-weight: 600 !important;
     background-color: #9200E8 !important;
     color: white !important;
-    transition: all 0.2s ease-in-out !important;
 }
-.btn-hero:hover {
-    background-color: #57288d !important;
-    transform: translateY(-5px);
+.social-buttons > *:hover {
+    opacity: .7;
+    transform: translateY(-3px);
 }
 .card-habilidade {
     perspective: 1000px;
@@ -178,6 +203,7 @@ footer {
 }
 .card-habilidade p {
     transition: all .4s ease-in-out;
+    font-family: Inter, sans-serif;
 }
 .card-habilidade:hover {
     font-weight: 700;
@@ -292,8 +318,8 @@ form {
     line-height: 150%;
 }
 .cta, .sobre, #projetos {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 .cta .container {
     gap: 20px;
@@ -306,7 +332,7 @@ form {
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
     -o-transition: all 0.4s;
-    padding: 20px 30px;
+    padding: 12px 24px;
     color: #fff;
     background-color: #a074f3;
     -webkit-animation: pulse 1s ease infinite;
