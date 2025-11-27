@@ -52,7 +52,7 @@ img {
 .navbar-brand img {
     max-width: 50px;
 }
-.main-hero {
+.main-hero, .contact-hero, .project-hero {
     padding: 130px 0;
 }
 .main-hero p {
@@ -388,6 +388,27 @@ form {
     }
     .main-hero, .sobre, .projetos {
         padding: 50px 0;
+    }
+    h1, h2, p {
+        text-align: center;
+    }
+    .typing-demo {
+        margin: 0 auto 8px;
+    }
+    .social-buttons {
+        justify-content: center;
+    }
+    .section-title .info {
+        text-align: justify;
+        text-align-last: center;
+    }
+    .text-corpo {
+        text-align: justify;
+        text-align-last: center;
+    }
+    .btn-hero {
+        margin: auto;
+        display: block;
     }
   }
   @media screen and (min-width: 767px) {
